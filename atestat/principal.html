@@ -1,22 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-<title>
-principal
-</title>
-<meta charset='utf-8'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal</title>
+  <style>
+    /* Stilizare pentru titluri și paragrafe */
+    h1 {
+      text-align: center;
+      font-size: 3em; /* Mai mare pentru titlu */
+      color: #2c3e50; /* O nuanță elegantă de albastru închis */
+    }
+	body{
+	background-color:#FFFAF0;
+	}
 
+    p {
+      text-align: center;
+      font-size: 1.5em; /* Mai mare pentru paragrafe */
+      color: #34495e; /* Nuanță mai soft pentru text */
+    }
+
+    b, i {
+      color: #e74c3c; /* Culoare roșie pentru <b> și <i> */
+    }
+
+    /* Stilizare pentru containerul imaginilor */
+    .image-container {
+      display: flex; /* Folosim Flexbox pentru alinierea imaginilor */
+      justify-content: center; /* Centrează imaginile pe orizontală */
+      gap: 20px; /* Adaugă un spațiu între imagini */
+      margin-top: 20px;
+    }
+
+    /* Stilizare imagini */
+    .image-container img {
+      width: 30%; /* Fă imaginile să fie mai mici, fiecare ocupând 30% din lățimea containerului */
+      height: auto; /* Păstrează proporțiile imaginilor */
+      border-radius: 10px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră subtilă pentru un efect estetic */
+      transition: transform 0.3s ease; /* Adaugă un efect de tranziție la hover */
+    }
+
+    /* Efect la hover pentru imagini */
+    .image-container img:hover {
+      transform: scale(1.05); /* Mărește ușor imaginea la hover */
+    }
+
+    /* Media query pentru dispozitive mobile */
+    @media (max-width: 768px) {
+      .image-container img {
+        width: 45%; /* Pe mobil, imaginile vor fi mai mari */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em; /* Titlul devine mai mic pe dispozitive mici */
+      }
+
+      p {
+        font-size: 1.2em; /* Paragrafele devin mai mici pe dispozitive mici */
+      }
+
+      .image-container img {
+        width: 90%; /* Imaginile vor ocupa aproape întreaga lățime pe mobil */
+      }
+    }
+  </style>
 </head>
 <body>
 
-<h1 align="center">Fa cunostinta cu simbolismul!</h1>
-<br>
-<p align="center">
-Pe acest site poti cunoaste detaliile curentului literar aparut in Franta, numit <b><i>simbolism</b></i>.
-</p>
-<br>
-<p align="center">In partea de sus poti selecta ce anume vrei sa cunosti despre simbolism.</p>
+  <h1>Fa cunoștință cu simbolismul!</h1>
+  <p>
+    Pe acest site poți cunoaște detaliile curentului literar apărut în Franța, numit <b><i>simbolism</i></b>.
+  </p>
+  <p>În partea de sus poți selecta ce anume vrei să cunoști despre simbolism.</p>
 
+  <!-- Container pentru imagini -->
+  <div class="image-container">
+    <img src="imagini/acasa1.jpg" alt="Simbolism artwork 1">
+	<img src="imagini/acasa2.jpg" alt="Simbolism artwork 1">
+	<img src="imagini/acasa3.jpg" alt="Simbolism artwork 1">
+  </div>
 
 </body>
 </html>

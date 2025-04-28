@@ -4,18 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title>titlu</title>
-    <style>
-        body{
-            background-image: url("imagini/dreapta.png");
-			background-repeat:no-repeat;
-			background-attachment:fixed;
-			background-color:#8D6F6F;
-			background-position: center top;
-        }
-        
-    </style>
+	<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden; /* opțional: elimină scrollul */
+    }
+
+    .moving-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background-image: url("imagini/parte.png");
+      background-repeat: repeat-x;
+      background-size: cover;
+      animation: moveBg 10s linear infinite;
+      z-index: -1; /* pentru a rămâne în fundal */
+    }
+
+    @keyframes moveBg {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    
+  </style>
+    
 </head>
 <body>
+<div class="moving-background"></div>
 
+  
 </body>
 </html>

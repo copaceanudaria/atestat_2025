@@ -6,6 +6,7 @@ opera
 </title>
 <style>
 html, body {
+ background-color: #FFFAF0;
   height: 100%; /* Asigură că întregul document ocupă 100% din înălțimea ferestrei */
   margin: 0; /* Elimină marginea implicită */
   display: flex;
@@ -22,10 +23,39 @@ img{
 h1{
  text-align:center;
 }
+
+.button-container {
+      text-align: bottom; 
+      margin-bottom: 20px; 
+    }
+	 .home-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2e3d49;
+      color: white;
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 20px auto;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #c6b727;
+    }
 </style>
 </head>
 <body>
-<h1> Pescarul sarac , 1881</h1>
+
+
+ <div class="button-container">
+ <h1> Pescarul sarac , 1881</h1>
+     <a href="../opere.html" class="home-button">Inapoi</a>
+  </div>
 <img src="imagini/pescar.jpg">
+
+
+
 </body>
 </html>

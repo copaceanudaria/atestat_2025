@@ -1,42 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-<title>
-opere
-</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opere</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFFAF0;
+      margin: 0;
+      padding: 20px;
+    }
 
-a:hover{
-font-size:0.5cm;
-}
-</style>
+    h2 {
+      color: #2e3d49;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 40px;
+    }
+
+    li {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    a:hover {
+      font-size: 1.2rem;
+      color: #ff6347;
+      transition: font-size 0.3s ease, color 0.3s ease;
+    }
+
+    /* Styling for the navigation and layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Add a border and padding to list items for better visibility */
+    li ul {
+      margin-top: 10px;
+      background-color: #FFF8DC;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    li ul li {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    li ul li a {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+   
+    }
+  </style>
 </head>
 <body>
-<h2>Simbolismul in literatura romaneasca</h2>
-<ul type="square">
-  <li>George Bacovia
+
+<div class="container">
+  <h2>Simbolismul in literatura romaneasca</h2>
+  <ul>
+    <li>George Bacovia
       <ul>
-         <li><a href="opere/plumb.html">Plumb</a>
-		 <li><a href="opere/amurg.html">Amurg violet</a>
-		 <li><a href="opere/lacustra.html">Lacustra</a>
+        <li><a href="opere/plumb.html">Plumb</a></li>
+        <li><a href="opere/amurg.html">Amurg violet</a></li>
+        <li><a href="opere/lacustra.html">Lacustra</a></li>
       </ul>
-   <li>Alexandru Macedonski
-       <ul>
-         <li><a href="opere/luna.html">Rondelul lunei</a>
-		 <li><a href="opere/apus.html">Apus</a>
-		 <li><a href="opere/apus.html">Rondelul beat de roze</a>
-      </ul>
-</ul>
-<h2>Simbolismul in arta</h1>
-<ul type="square">
-  <li>Arnold Bocklin
+    </li>
+    <li>Alexandru Macedonski
       <ul>
-         <li><a href="opere/autoportret.html">"Autoportret cu moartea jucand la lautari"</a>
+        <li><a href="opere/luna.html">Rondelul lunei</a></li>
+        <li><a href="opere/apus.html">Apus</a></li>
+        <li><a href="opere/roze.html">Rondelul beat de roze</a></li>
       </ul>
-   <li>Puvis de Chavannes
-       <ul>
-         <li><a href="opere/pescar.html">"Pescarul sarac"</a>
+    </li>
+  </ul>
+
+  <h2>Simbolismul in arta</h2>
+  <ul>
+    <li>Arnold Bocklin
+      <ul>
+        <li><a href="opere/autoportret.html">"Autoportret cu moartea jucand la lautari"</a></li>
       </ul>
-</ul>
+    </li>
+    <li>Puvis de Chavannes
+      <ul>
+        <li><a href="opere/pescar.html">"Pescarul sarac"</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 </body>
 </html>
